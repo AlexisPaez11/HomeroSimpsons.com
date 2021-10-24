@@ -9,8 +9,8 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 6.25rem);
-    grid-template-rows: repeat(6, 6.25rem);
+    grid-template-columns: repeat(6, 6rem);
+    grid-template-rows: repeat(6, 6rem);
     border: 10px solid black;
 }
 
@@ -52,4 +52,11 @@ body {
     border: 5px solid darkslateblue;
     grid-row-start: 2;
     grid-column-start: 1;
+}
+
+@media only screen and (max-width: 650px) {
+    .grid {
+        grid-template-columns: repeat(6, 4rem);
+        grid-template-rows: repeat(6, 4rem);
+    }
 }
